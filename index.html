@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordle-like Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Wordle-like Game</h1>
+        <nav>
+            <a href="login.html">Login</a>
+            <a href="signup.html">Signup</a>
+            <a href="howtoplay.html">How to Play</a>
+        </nav>
+    </header>
+
+    <main>
+        <div id="word-display">Word to guess: <span id="word-text"></span></div>
+        <div class="grid">
+            <!-- Create a 6x5 grid -->
+            <div class="row">
+                <input type="text" maxlength="1" class="cell" disabled>
+                <input type="text" maxlength="1" class="cell" disabled>
+                <input type="text" maxlength="1" class="cell" disabled>
+                <input type="text" maxlength="1" class="cell" disabled>
+                <input type="text" maxlength="1" class="cell" disabled>
+            </div>
+            <!-- Repeat for 5 more rows -->
+            <div class="row">
+                <input type="text" maxlength="1" class="cell" disabled>
+                <input type="text" maxlength="1" class="cell" disabled>
+                <input type="text" maxlength="1" class="cell" disabled>
+                <input type="text" maxlength="1" class="cell" disabled>
+                <input type="text" maxlength="1" class="cell" disabled>
+            </div>
+            <div class="row">
+                <input type="text" maxlength="1" class="cell" disabled>
+                <input type="text" maxlength="1" class="cell" disabled>
+                <input type="text" maxlength="1" class="cell" disabled>
+                <input type="text" maxlength="1" class="cell" disabled>
+                <input type="text" maxlength="1" class="cell" disabled>
+            </div>
+            <div class="row">
+                <input type="text" maxlength="1" class="cell" disabled>
+                <input type="text" maxlength="1" class="cell" disabled>
+                <input type="text" maxlength="1" class="cell" disabled>
+                <input type="text" maxlength="1" class="cell" disabled>
+                <input type="text" maxlength="1" class="cell" disabled>
+            </div>
+            <div class="row">
+                <input type="text" maxlength="1" class="cell" disabled>
+                <input type="text" maxlength="1" class="cell" disabled>
+                <input type="text" maxlength="1" class="cell" disabled>
+                <input type="text" maxlength="1" class="cell" disabled>
+                <input type="text" maxlength="1" class="cell" disabled>
+            </div>
+            <div class="row">
+                <input type="text" maxlength="1" class="cell" disabled>
+                <input type="text" maxlength="1" class="cell" disabled>
+                <input type="text" maxlength="1" class="cell" disabled>
+                <input type="text" maxlength="1" class="cell" disabled>
+                <input type="text" maxlength="1" class="cell" disabled>
+            </div>
+        </div>
+        <button id="submit">Submit</button>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
