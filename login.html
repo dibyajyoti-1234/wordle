@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            ;
+        }
+        .container {
+            width: 780px;
+            margin-left:  500px;
+            margin-top:25px;
+            padding: 150px;
+            border: 20px solid #ccc;
+            border-radius: 5px;
+            background-color: black;
+            width:150px;
+            padding-top:100px;
+            padding-right:270px;
+        
+            
+        }
+        .form{
+        
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding:6px;
+            margin: 6px 0px;
+            border: 7px solid;
+            border-radius: 3px;
+            
+        }
+        input[type="submit"] {
+            width: 110%;
+            padding: 10px ;
+            background-color: #007BFF;
+        
+            border: none;
+            border-radius: px;
+            cursor: pointer;
+        }
+       #loginForm{
+       padding-left: 10px;
+       padding-right: -120px;
+       margin-right: -90px;
+       padding-top: 15px;
+   
+       }
+    </style>
+</head>
+
+    <main>
+    <div class="container">
+        <div class="img">
+            <img src="WhatsApp Image 2024-08-24 at 21.22.10_610cbc76.jpg" height="300px"width="270px">
+        </div>
+       <section class="form">
+        <form id="loginForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+            <input type="submit" value="Login to your account">
+        </form>
+        </section>
+    </div>
+    </main>
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+
+            // Replace the following with your actual login logic
+            if (username === "dasdibyajyoti276@gmail.com" && password === "12345678") {
+                alert("Login successful!");
+                // Redirect to another page or perform other actions as needed
+            } else {
+                alert("please enter your details properly for login");
+            }
+        });
+    </script>
+
+</html>
